@@ -31,6 +31,9 @@
 .links {
   display: none;
 }
+.link {
+  font-family: "Roboto";
+}
 
 @media (min-width: 769px) {
   .contenedor-nav {
@@ -47,10 +50,15 @@
     width: 80px;
     height: 80px;
   }
+  .nav {
+    padding-left: 5%;
+    padding-right: 3%;
+  }
   .links {
     display: flex;
-    align-items: center;
     margin: 0 auto;
+    justify-content: flex-end;
+    padding-left: 25px;
   }
   .menu-nav {
     display: none;
@@ -58,7 +66,7 @@
   .link {
     font-size: 24px;
     margin-top: 40px;
-    margin-left: 25px;
+    margin-left: 55px;
   }
 }
 
@@ -70,9 +78,11 @@
 }
 .primer-titulo {
   text-align: center;
-  font-size: 40px;
+  font-size: 36px;
+  font-family: "Open Sans";
 }
 .persona {
+  padding-left: 5%;
   margin: 0 auto;
   width: 100%;
   max-width: 610px;
@@ -97,5 +107,254 @@
 
 .section-1 {
   background-color: black;
+  width: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.presentacion {
+  width: 100%;
+}
+
+.segundo-titulo {
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.primer-parrafo {
+  text-align: left;
+  font-size: 15px;
+  margin: 32px 10px;
+}
+
+.check {
+  margin: 10px 0 20px 0;
+}
+
+@media (min-width: 769px) {
+  .section-1 {
+    flex-direction: row-reverse;
+    padding: 50px;
+    height: 500px;
+  }
+  .presentacion {
+    width: 60%;
+    height: 210px;
+    margin-left: 70px;
+  }
+  .segundo-titulo {
+    font-size: 32px;
+    margin-top: 0px;
+  }
+  .primer-parrafo {
+    font-size: 24px;
+  }
+  .check {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+/* CUARTA CAPA */
+.section-2 {
+  padding: 52px;
+}
+
+.tercer-titulo {
+  font-family: "Open Sans";
+  font-size: 32px;
+  text-align: center;
+}
+.contenedor-section-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.primer-hijo {
+  margin-top: 30px;
+}
+.segundo-hijo {
+  margin-top: 70px;
+}
+.tercer-hijo {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.compu {
+  width: 160px;
+  height: 140px;
+}
+.subtitulo {
+  font-size: 24px;
+  margin-top: 5px;
+}
+.segundo-parrafo {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 769px) {
+  .tercer-titulo {
+    font-size: 48px;
+  }
+  .contenedor-section-2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .primer-hijo {
+    margin: 60px 0px 50px 0px;
+  }
+  .segundo-hijo {
+    margin: 60px 90px 50px 90px;
+  }
+  .tercer-hijo {
+    margin: 60px 0px 5px 0px;
+  }
+  .segundo-parrafo {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* QUINTA CAPA */
+
+.section-3 {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.cuarto-titulo {
+  text-align: center;
+  font-family: "Open Sans";
+}
+.form {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  margin-top: 15px;
+}
+.input-name {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  outline: none;
+}
+.input-email {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  outline: none;
+}
+.textarea {
+  margin-top: 10px;
+  height: 100px;
+  width: 100%;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  outline: none;
+}
+.input-email:focus,
+textarea:focus,
+.input-name:focus {
+  background-color: #ffd953;
+  border: 3px solid #555;
+}
+.input-email:hover,
+.textarea:hover,
+.input-name:hover {
+  background: linear-gradient(to top, transparent, rgb(208, 205, 205));
+  transition: 0.4s;
+}
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: #ffd953;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.button:hover {
+  background-color: red;
+  color: white;
+}
+
+@media (min-width: 769px) {
+  .section-3 {
+    flex-direction: row;
+  }
+  .cuarto-titulo {
+    width: 35%;
+    padding-top: 55px;
+    font-size: 48px;
+    padding-left: 70px;
+  }
+  .form {
+    width: 50%;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* SEXTA CAPA FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 60px 20px 100px;
+}
+
+.logo-footer {
+  width: 90px;
+  height: 80px;
+}
+.copyright {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.segundo-hijo-footer {
+  margin-top: 100px;
+}
+.img-footer {
+  width: 30px;
+  height: 30px;
+}
+.label-footer {
+  margin-left: 5px;
+  font-size: 16px;
+}
+.red {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px 0px 50px;
+  }
+  .segundo-hijo-footer {
+    margin-top: 0px;
+  }
+  .red {
+    margin-right: 180px;
+  }
 }
